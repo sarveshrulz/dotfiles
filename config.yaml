@@ -1,0 +1,47 @@
+config:
+  backup: true
+  create: true
+  dotpath: dotfiles
+dotfiles:
+  d_alacritty:
+    src: config/alacritty
+    dst: ~/.config/alacritty
+    chmod: '755'
+  d_bspwm:
+    src: config/bspwm
+    dst: ~/.config/bspwm
+    chmod: '755'
+  d_dunst:
+    src: config/dunst
+    dst: ~/.config/dunst
+    chmod: '755'
+  d_picom:
+    src: config/picom
+    dst: ~/.config/picom
+    chmod: '755'
+  d_polybar:
+    src: config/polybar
+    dst: ~/.config/polybar
+    chmod: '755'
+  d_rofi:
+    src: config/rofi
+    dst: ~/.config/rofi
+    chmod: '755'
+  d_sxhkd:
+    src: config/sxhkd
+    dst: ~/.config/sxhkd
+    chmod: '755'
+  d_scripts:
+    src: config/sxhkd/scripts
+    dst: ~/.config/sxhkd/scripts
+profiles:
+  silver:
+    dotfiles:
+    - d_alacritty
+    - d_bspwm
+    - d_dunst
+    - d_picom
+    - d_polybar
+    - d_rofi
+    - d_sxhkd
+    - d_scripts
